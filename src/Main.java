@@ -12,10 +12,6 @@ public class Main {
         String input;
         double money;
         int amountOfDays;
-        String person;
-
-        System.out.println(
-                nationalBank.calculateDeposit(1200, 180, "individual"));
         while (true) {
             System.out.println("================");
             System.out.println("В каком банке вы хотите открыть депозит?" +
@@ -61,7 +57,7 @@ public class Main {
                     System.out.println("Ваша выгода с депозита составляет:");
                     if (input.equals("1"))
                         System.out.println(nationalBank.calculateDeposit(money, amountOfDays, "legalEntity"));
-                    if (input.equals("2"))
+                    else if (input.equals("2"))
                         System.out.println(nationalBank.calculateDeposit(money, amountOfDays, "individual"));
                     else
                         System.err.println("Неправильный ввод!");
@@ -104,7 +100,7 @@ public class Main {
                     System.out.println("Ваша выгода с депозита составляет:");
                     if (input.equals("1"))
                         System.out.println(secondTierBank.calculateDeposit(money, amountOfDays, "legalEntity"));
-                    if (input.equals("2"))
+                    else if (input.equals("2"))
                         System.out.println(secondTierBank.calculateDeposit(money, amountOfDays, "individual"));
                     else
                         System.err.println("Неправильный ввод!");
