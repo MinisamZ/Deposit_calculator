@@ -16,20 +16,4 @@ class Calculator {
             return 0;
         }
     }
-
-
-//    modifier modifier datatype RATEFORLEGALENTITIES = value;
-//    modifier modifier datatype RATEFORINDIVIDUALS = value;
-//    modifier returntype depositReward(param1, param2, param3){
-//        if(param3 /*check equality here*/ ("individual")){
-//            return param1+ param1*RATEFORINDIVIDUALS* param2/12.0;
-//        }else if (param3 /*check equality here*/ ("legalEntity")){
-//            return param1+ param1*RATEFORLEGALENTITIES* param2/12.0;
-//        }else{
-//            System.out.println("error!");
-//            return 0;
-//        }
-//    }
-
-
 }
